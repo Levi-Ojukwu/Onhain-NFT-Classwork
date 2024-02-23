@@ -21,10 +21,10 @@ contract OnchainNFT is ERC721URIStorage {
     function generateCharacter(uint256 _tokenId) public pure returns(string memory) {
         bytes memory svg = abi.encodePacked(
             '<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet" viewBox="0 0 350 350">'
-   '<style>.base { fill: white; font-family: serif; font-size: 14px; }</style>'
-   '<rect width="100%" height="100%" fill="black" />'
-   '<text x="50%" y="40%" class="base" dominant-baseline="middle" text-anchor="middle">Warrior</text>'
-   '<text x="50%" y="50%" class="base" dominant-baseline="middle" text-anchor="middle">Levels: getLevels(_tokenId)</text>'
+   '<style>.base { fill: white; font-family: sans-serif; font-size: 18px; }</style>'
+   '<rect width="100%" height="100%" fill="#339af0" />'
+   '<text x="50%" y="40%" class="base" dominant-baseline="middle" text-anchor="middle">Levi NFT</text>'
+   '<text x="50%" y="50%" class="base" dominant-baseline="middle" text-anchor="middle">Symbol: LINFT</text>'
  '</svg>'
         );
 
